@@ -1,0 +1,16 @@
+{
+    "name": "web_builder",
+    "version": "1.0.0",
+    "description": "A web builder project",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"No tests specified\" && exit 0"
+    },
+    "keywords": [],
+    "author": "Endoxy",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^10.0.0"
+    }
+}

@@ -13,7 +13,22 @@
 }
 
 body {
-    background-color: #0B0705;
+    min-height: 100vh;
+    background: linear-gradient(120deg, rgb(177, 130, 0) 5%, rgb(0, 60, 255) 25%, #4b037a 60%, rgb(90, 0, 112) 85%, black 100%);
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.25;
+    mix-blend-mode: multiply;
+    background: url('https://www.transparenttextures.com/patterns/sandpaper.png');
+    background-size: 200px 200px;
 }
 
 
@@ -55,6 +70,7 @@ header {
 }
 
 .nav-button {
+    font-size: medium;
     width: 100px;
     height: 40px;
     border-radius: 20px;

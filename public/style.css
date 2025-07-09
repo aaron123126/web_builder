@@ -49,15 +49,16 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    background: rgba(27, 74, 202, 0.95);
+    background: rgba(114, 114, 114, 0.95);
     border-radius: 200px;
-    box-shadow: 0 4px 34px rgba(0, 60, 255, 0.664);
+    box-shadow: 0 4px 34px rgba(255, 255, 255, 0.664);
     margin: 0 auto;
     align-items: center;
     padding: 0 24px;
 }
 
 main {
+    text-align: left;
     background-color: #1a1a1a;
     border-radius: 20px;
     width: 80%;
@@ -79,7 +80,8 @@ main {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     animation: subtle-gradient-move 30s linear infinite;
-    font-size: 42px;    
+    font-size: 42px;
+    margin-bottom: -30px;
 }
 
 @keyframes subtle-gradient-move {
@@ -91,10 +93,6 @@ main {
     }
 }
 
-#desciption-product {
-    text-align: left;
-}
-
 .home_button {
     width: 30px;
     height: 30px;
@@ -102,9 +100,14 @@ main {
 }
 
 .title {
+    color: rgb(255, 255, 255);
     margin-right: auto;
     display: flex;
     align-items: center;
+}
+
+.main-text {
+    text-align: left;
 }
 
 .nav-button {
@@ -114,13 +117,58 @@ main {
     border-radius: 20px;
     border-color: transparent;
     margin: 2px;
-    background-color: #2b2b2b;
-    color: white;
+    background-color: #424242;
+    color: rgb(255, 255, 255);
     transition: background-color 0.2s ease;
 }
 
 .nav-button:hover {
     transition: 0.2s ease;
-    background-color: black;
+    background-color: #313131;
     cursor: pointer;
 }
+
+.main-button {
+    background-color: #424242;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.main-button:hover {
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: #313131;
+}
+
+.big-button {
+    background-color: #424242;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.big-button:hover {
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: #313131;
+}
+
+.long-text {
+    display: block;
+    width: 460px;
+    max-width: 100vw;
+    min-width: 250px;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.demo-video {}

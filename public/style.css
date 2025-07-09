@@ -171,4 +171,7 @@ main {
     white-space: normal;
 }
 
-.demo-video {}
+.demo-video {
+    display: none;
+    /* Insert Ad Video */
+}

@@ -51,7 +51,7 @@ header {
     z-index: 1000;
     background: rgba(114, 114, 114, 0.95);
     border-radius: 200px;
-    box-shadow: 0 4px 34px rgba(255, 255, 255, 0.664);
+    box-shadow: 0 0px 34px rgba(255, 255, 255, 0.664);
     margin: 0 auto;
     align-items: center;
     padding: 0 24px;
@@ -61,7 +61,7 @@ main {
     text-align: left;
     background-color: #1a1a1a;
     border-radius: 20px;
-    width: 80%;
+    width: 95%;
     max-width: 1600px;
     margin: 22px auto 0 auto;
     box-sizing: border-box;
@@ -172,6 +172,104 @@ main {
 }
 
 .demo-video {
-    display: none;
-    /* Insert Ad Video */
+    position: absolute;
+    top: 48px;
+    right: 39px;
+    margin-top: 126x;
+    width: 500px;
+    max-width: 50vw;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+    background: #222;
+}
+
+main {
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .demo-video {
+        position: static;
+        display: block;
+        margin: 24px auto 0 auto;
+        width: 90vw;
+        max-width: 100%;
+    }
+}
+
+.beta-badge {
+    width: 48px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 720px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.screenshot {
+    width: 200px;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    object-fit: cover;
+    background: #f8f8f8;
+    transition: transform 0.2s;
+}
+
+.screenshot:hover {
+    transform: scale(1.04);
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 200px;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    object-fit: cover;
+    background: #f8f8f8;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.04);
+}
+
+footer {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    padding: 33px 0 33px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: #444444;
+    font-size: 1rem;
+    color: #333;
+    flex-wrap: wrap;
 }

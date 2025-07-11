@@ -6,10 +6,21 @@
      rgba(27, 74, 202, 0.95)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 * {
     text-align: center;
     font-family: Arial, sans-serif;
     color: white;
+}
+
+p {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
 }
 
 body {
